@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Transportation Survey</title>
+    <title>A Stress Test</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h2>A Stress Test</h2>
       </div>
-      <form id="transportation_survey">
+      <form id="stress_survey">
         <div class="form-group">
           <p>Are you feeling stressed?  Do any of these high stress warning signs apply to you?</p>
-          <input type="checkbox" name="work-transportation" value="bike">Loss of sleep<br>
-          <input type="checkbox" name="work-transportation" value="car">Feeling overwhelmed<br>
-          <input type="checkbox" name="work-transportation" value="carpool">Apathy, lack of energy.<br>
-          <input type="checkbox" name="work-transportation" value="walk">Erectile dysfunction<br>
-          <input type="checkbox" name="work-transportation" value="bus">Fear of kittens<br>
-          <input type="checkbox" name="work-transportation" value="train">Using alcohol or drugs to relieve or forget stress.<br>
+          <input type="checkbox" name="warning-signs" value="1">Loss of sleep<br>
+          <input type="checkbox" name="warning-signs" value="1">Feeling overwhelmed<br>
+          <input type="checkbox" name="warning-signs" value="1">Apathy, lack of energy.<br>
+          <input type="checkbox" name="warning-signs" value="1">Feeling on edge.<br>
+          <input type="checkbox" name="warning-signs" value="1">Being more emotional.<br>
+          <input type="checkbox" name="warning-signs" value="1">Using alcohol or drugs to relieve or forget stress.<br>
         </div>
         <div class="form-group">
           <p>Are you experiencing any of these symptoms?:</p>
-          <input type="checkbox" name="fun-transportation" value="bike">Headache.<br>
-          <input type="checkbox" name="fun-transportation" value="car">Muscle tension or pain<br>
-          <input type="checkbox" name="fun-transportation" value="carpool">Chest pain.<br>
-          <input type="checkbox" name="fun-transportation" value="walk">Stomach upset.<br>
-          <input type="checkbox" name="fun-transportation" value="bus">Sleep problems.<br>
-          <input type="checkbox" name="fun-transportation" value="train">Fatigue.<br>          
+          <input type="checkbox" name="symptoms" value="1">Headache.<br>
+          <input type="checkbox" name="symptoms" value="1">Muscle tension or pain<br>
+          <input type="checkbox" name="symptoms" value="1">Chest pain.<br>
+          <input type="checkbox" name="symptoms" value="1">Stomach upset.<br>
+          <input type="checkbox" name="symptoms" value="1">Sleep problems.<br>
+          <input type="checkbox" name="symptoms" value="1">Fatigue.<br>
+        </div>
+        <div class="form-group">
+          <p>Are you attempting to cope with your stress using any of these methods?:</p>
+          <input type="checkbox" name="attempt-methods" value="-1">Meditation.<br>
+          <input type="checkbox" name="attempt-methods" value="-1">Masturbation<br>
+          <input type="checkbox" name="attempt-methods" value="-1">Exercise<br>
+          <input type="checkbox" name="attempt-methods" value="-1">Drinking herbal tea<br>
+          <input type="checkbox" name="attempt-methods" value="-1">Yoga<br>
+          <input type="checkbox" name="attempt-methods" value="-1">Punching a punching bag<br>
         </div>
        <button type="submit">Submit Survey</button>
       </form>
-      <span id="work-responses">
-        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+      <div id="response">
+        <p><span id="output"></span></p>
+      </div>
+      <!-- <span id="responseStress">
+        <p>You seem sort of stressed out.  We recommend that you check out some of these resources:
+          </p>
+          <a href="http://www.tm.org/?leadsource=CRM1718&gclid=CPSIu6ng9s8CFQdbhgodUYcNKA">http://www.tm.org/?leadsource=CRM1718&gclid=CPSIu6ng9s8CFQdbhgodUYcNKA</a>
+          <a href="http://www.portland-hypnotherapy.com/stress-management">http://www.portland-hypnotherapy.com/stress-management</a>
+          <a href="http://yogahillsboro.com/">http://yogahillsboro.com/</a>
       </span>
       <br>
-      <span id="fun-responses">
-        <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      <span id="responseSuperStress">
+        <p>You seem really, really stressed out.  We recommend that you chill out and check out some of these resources:</p>
+        <a href="http://suicidepreventionlifeline.org/#">http://suicidepreventionlifeline.org/#</a>
       </span>
+      <span id="responseNoStress">
+        <p>You don't seem very stressed out at all.  Congratulations!  Keep doing what you're doing...</p>
+      </span> -->
     </div>
   </body>
 </html>
